@@ -6,7 +6,8 @@ import ChatMessage from './ChatMessage';
 import TypingIndicator from './TypingIndicator';
 import './ChatWidget.css';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+console.log(API_URL, "api url");
 
 /**
  * Generate a UUID v4 for session tracking.
